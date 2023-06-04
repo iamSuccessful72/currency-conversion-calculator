@@ -42,7 +42,7 @@ function Converter() {
           <div className="mt-4">
             <label className="block" htmlFor="amount">Amount</label>
             <input
-              className="border border-river-bed ml-4 p-2 rounded"
+              className="border border-river-bed p-2 rounded"
               id="amount"
               min={0.0}
               name="amount"
@@ -75,7 +75,7 @@ function Converter() {
           <div className="mt-4">
             <label className="block" htmlFor="rate">Rate</label>
             <input
-              className="border border-river-bed ml-4 p-2 rounded"
+              className="border border-river-bed p-2 rounded"
               id="rate"
               readOnly
               step="any"
