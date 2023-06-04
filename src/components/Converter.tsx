@@ -20,11 +20,13 @@ function Converter() {
     <form className="2xl:w-2/4 md:w-3/4 mx-auto" onSubmit={handleSubmit}>
       <fieldset>
         <legend>Convert</legend>
-        <label className="block mt-4" htmlFor="from">
-          From
-        </label>
         <div className="flex items-center justify-between">
+          <div className="mt-4">
+            <label className="block" htmlFor="from">
+              From
+            </label>
           <select
+            className="bg-transparent p-2"
             id="from"
             name="from"
             onChange={handleChange}
@@ -36,8 +38,9 @@ function Converter() {
               </option>
             ))}
           </select>
-          <div>
-            <label htmlFor="amount">Amount</label>
+          </div>
+          <div className="mt-4">
+            <label className="block" htmlFor="amount">Amount</label>
             <input
               className="border border-river-bed ml-4 p-2 rounded"
               id="amount"
@@ -50,11 +53,13 @@ function Converter() {
             />
           </div>
         </div>
-        <label className="block mt-4" htmlFor="to">
-          To
-        </label>
         <div className="flex items-center justify-between">
+          <div className="mt-4" >
+            <label className="block" htmlFor="to">
+          To
+          </label>
           <select
+            className="bg-transparent p-2"
             id="to"
             name="to"
             onChange={handleChange}
@@ -66,8 +71,9 @@ function Converter() {
               </option>
             ))}
           </select>
-          <div>
-            <label htmlFor="rate">Rate</label>
+          </div>
+          <div className="mt-4">
+            <label className="block" htmlFor="rate">Rate</label>
             <input
               className="border border-river-bed ml-4 p-2 rounded"
               id="rate"
